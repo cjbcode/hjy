@@ -72,8 +72,10 @@ input, textarea, select, button {
 	}
 }
 .personal .no p a:hover, .personal .yes ul li a:hover, .conve-list ul li a:hover, .live-list .hd span a:hover, .live-list .bd ul li a:hover b, .ac-list li a:hover b, .search-list .fl h2 a:hover, .box ul li a:hover b, .order .hd span a:hover, .confirm .bd li a:hover b, .confirm .ft li a.ckqb:hover, .trolley td a:hover p b, .trolley td a.del:hover, .trolley .ft a:hover, .kong a:hover, .wx-pay .bd a:hover, .success .icon a:hover, .home .fl a:hover, .order-list h2 a:hover, .order-list ul li a:hover b, .saving td a:hover, .homepage .hd p font a:hover, .homepage .info li a:hover, .homepage .receiv td a:hover, .add_pop .cont h2 a:hover, .pop_mode .cont h2 a:hover, .customs-pop .cont h2 a:hover {color: #dc0f50;}
-/*=================wrap_top========================*/
 
+.head .top .search p a.curr, .head .top .search p a:hover, .nav ul li a:hover, .nav ul li a.curr {
+    color: #dc0f50;
+}
 /*=================wrap_top========================*/
 .wrap_top {width:100%;height:30px;background:#e5e5e5;text-align:right;}
 .wrap_top p a, .wrap_top p span, .wrap_top p font {color: #666;font-size: 12px;margin-right: 18px;cursor: pointer;text-decoration:none;}
@@ -153,7 +155,8 @@ input, textarea, select, button {
 	border: 10px solid #ddd;
 	border-left-color: transparent;
 	border-right-color: transparent;
-	border-top: none;position: absolute;
+	border-top: none;
+	position: absolute;
 	left: 110px;top: -10px;
 	border-bottom-color:#fff;
 }

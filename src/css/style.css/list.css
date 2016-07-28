@@ -138,7 +138,6 @@
     display: inline-block;
     width: 8px;
     height: 10px;
-    background: url(../img/filter_b_bg2.png) no-repeat;
     background-position: 0 -5px;
     margin-left: 4px;
     position: relative;
@@ -255,7 +254,7 @@
     color: #fff;
     background: #dc0f50;
 }
-.pag a.curr, .pag a:hover {
+.pag a.curr, .pag a:hover ,{
     border: 1px solid #dc0f50;
     color: #fff;
     background: #dc0f50;
@@ -280,7 +279,7 @@
     color: #666;
     margin-right: 10px;
 }
-/*==========右边=============*/
+/*==========右边=====本月热销========*/
 .search-list .fr {
     width: 233px;
     overflow: hidden;
@@ -312,9 +311,6 @@
     display: block;
     height: 80px;
 }
-.selling .bd li a i.i1 {
-    background: url(../img/biao_bg.png) no-repeat;
-}
 .selling .bd li a i {
     display: block;
     width: 25px;
@@ -327,6 +323,15 @@
     left: 0;
     top: 10px;
     z-index: 10;
+}
+.selling .bd li a i.i1 {
+    background: url(../img/biao_bg.png) no-repeat;
+}
+.selling .bd li a i.i2 {
+    background: url(../img/biao_bg.png) no-repeat 0 -26px;
+}
+.selling .bd li a i.i3 {
+    background: url(../img/biao_bg.png) no-repeat 0 -52px;
 }
 .selling .bd li a img {
     width: 80px;
@@ -465,7 +470,7 @@
     color: #999;
     text-decoration: line-through;
 }
-/*=======================左右切换==================*/
+/*====================左右切换==================*/
 .live-list .bd .prev, .live-list .bd .next {
     width: 30px;
     height: 60px;
@@ -487,6 +492,61 @@
     background: url(../img/next_bg.png) no-repeat;
     right: 0;
 }
+/*==================重新搜索=====================*/
+.again {
+    height: 30px;
+    padding: 30px 0 30px 335px;
+    text-align: center;
+    margin-bottom: 40px;
+    overflow: hidden;
+    background: #e5e5e5;
+}
+.again b {
+    line-height: 30px;
+    float: left;
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 16px;
+    color: #666;
+}
+.again input {
+    float: left;
+    width: 370px;
+    padding: 0 5px;
+    border: 1px solid #dc0f50;
+    background: #fff;
+    height: 28px;
+    line-height: 28px;
+}
+.again a {
+    float: left;
+    line-height: 30px;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    background: #dc0f50;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

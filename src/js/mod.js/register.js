@@ -44,7 +44,7 @@ window.onload=function(){
 			emPassConfirm.style.display="block";
 			emPassConfirm.innerHTML="";
 			emPassConfirm.className="";
-			console.log(txtPassConfirm.value.length);
+
 		}else if(txtPassConfirm.value.length==0){
 			emPassConfirm.style.display="block";
 			emPassConfirm.innerHTML="密码不能为空";
@@ -109,10 +109,23 @@ window.onload=function(){
 		}else if(btnPhoneRegister.style.background=="#ddd"){
 			alert("请阅读协议是否同意");
 		}else{
+			var myname=phoneNo.value;
+			var mypass=txtPass.value;
+			setCookie("uName",myname,7);
+			setCookie("pWord",mypass,7);
 			alert("注册成功");
 		}
 	}
+	/*-----------------登录注册（cookie）-----------*/
+	function setCookie(userName,uservalue,day){
+		var date=new Date();
+		date.setDate(date.getDate()+day	);
+		document.cookie=(userName+"="+uservalue+"; expires="+date+";path=/")
+	}
 	
+	function removeCookie(userName){
+		 setCookie(userName,"",-1)
+	}
 	
 	
 }

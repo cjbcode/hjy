@@ -5,7 +5,7 @@
 <title>details</title>
 <link rel="stylesheet" href="../../css/common.css/common.css"/>
 <link rel="stylesheet" href="../../css/style.css/details.css"/>
-<script type="text/javascript" src="../../jquery-1.12.0.js"></script>
+<script type="text/javascript" src="../../js/common.js/jquery-1.12.0.js"></script>
 </head>
 
 <body>
@@ -43,7 +43,6 @@
         </label>
     </p>
 </div> 
-     
 <!--========================head============================= -->
 <div class="head">
 	<div class="top">
@@ -119,8 +118,8 @@
             <div class="bigpic">
             	<img class="bp" src="../../img/fbig_a1.jpg">
             </div>
-       <!--============================================== -->
-       <script>
+       <!--====================放大镜========================== -->
+<!--<script>
 	$(function(){
 		var $smallpic=$('.smallpic');
 		var $box=$('.big');
@@ -155,7 +154,7 @@
 		})
 	})
 	
-</script>
+</script> -->
        <!--============================================= -->
         </div>
         <div class="fr">
@@ -167,11 +166,11 @@
                 </p>
                 <p class="num">
                     <b>商品编号</b>
-                    <span>8016450901</span>
+                    <span>1111111111</span>
                 </p>
                 <p class="shou">
                     <b>月销</b>
-                    <span>164件</span>
+                    <span>111件</span>
                 </p>
         
                 <p style="display: none;" class="gift" id="promotion">
@@ -247,7 +246,7 @@
                 <ul>
                     <li>
                         <b>【商品编码】</b>
-                        <span>8016450901</span>
+                        <span>111111111</span>
                     </li><li>
                         <b>【品牌】</b>
                         <span>欧润哲</span>
@@ -278,100 +277,6 @@
         </div>
     </div>
 </div>
-
-<script type="text/javascript">
-    /*详情页切换*/
-    var nav = document.getElementById('nav').getElementsByTagName('li');//获取导航
-    var box = document.getElementById('u_cont').getElementsByTagName('div');//获取模块
-    for (var i = 0; i <= nav.length - 1; i++) {
-        nav[i].onclick = function () {
-            for (var i = 0; i <= nav.length - 1; i++) {
-                if (nav[i] == this) {
-                    nav[i].className = 'curr';
-                    box[i].style.display = 'block';
-                } else {
-                    nav[i].className = '';
-                    box[i].style.display = 'none';
-                }
-            }
-        }
-	}
-</script>
-<script type="text/javascript">
-
-</script>
-
-
-   
-    <script type="text/javascript">
-        $(function(){
-             //
-            $(".com_imgs").each(function(){
-                $(this).find(".img_delete").click(function(){
-                    var oSrc1=$(this).parent().find("img").attr("src");
-                    var a = $(this).parents(".com_imgs_up").find(".img2big img");
-                    var oSrc2=a.attr("src");
-                    $(this).parent().remove();
-                    if(oSrc1==oSrc2){
-                        a.attr("src","");
-                        a.parent().hide();
-                    }
-                 })
-            })
-            //
-             $(".img_delete2").click(function(){
-                $(this).parent().hide();
-
-             })
-             //
-             $(".com_imgs").each(function(){
-                $(this).find("li").click(function(){
-                    var oSrc=$(this).find("img").attr("src");
-                    $(this).parent().children().removeClass("act");
-                    $(this).parent().children().find(".img_arrow").hide();
-                    $(this).addClass("act");
-                    $(this).find(".img_arrow").show();
-                    $(this).find(".img_delete").hide();
-                    $(this).parents(".com_imgs_up").find(".img2big img").attr("src",oSrc);
-                    $(this).parents(".com_imgs_up").find(".img2big").show();
-                })
-            })
-            
-         })
-            //define(function(){ 
-                var showAndHide=function(id){ 
-                    var obj=$(id);
-                    var timer1=null;
-                    var timer2=null;
-                    obj.mouseenter(function() {
-                        clearTimeout(timer1);
-                        clearTimeout(timer2);
-                        $('.song_dialog').show();
-                        $(this).addClass("act");
-                    });
-                    obj.mouseleave(function() {
-                        var _this=$(this);
-                        timer2=setTimeout(function(){ 
-                            $('.song_dialog').hide();
-                            _this.removeClass("act");
-                        },300);
-                    });
-                    $('.song_dialog').mouseleave(function() {
-                        var _this=$(this);
-                        timer1=setTimeout(function(){ 
-                            _this.hide();
-                            $(".songAddr_btn").removeClass("act");
-                        },300)
-                    });
-                   $('.song_dialog').mouseenter(function() {
-                        clearTimeout(timer1);
-                        clearTimeout(timer2);
-                            $(".songAddr_btn").addClass("act");
-                    });
-                };
-           
-    </script>
-
 
 <!--============返回顶部============-->
 <ul class="drift">
@@ -551,6 +456,7 @@
         <p>Copyright © 2008-2013 huijiayou.cn <a>家有购物集团有限公司北京分公司</a> 版权所有 黔ICP备13002365号  增值电信业务经营许可证：黔B2-20120036</p>
     </div>
 </div>
+<script src="../../js/mod.js/details.js"></script>
 
 </body>
 </html>

@@ -632,7 +632,7 @@
     height: 190px;
     overflow: hidden;
 }
-/*===============1F右边========================*/
+/*===============1F右边=====本月热销===================*/
 .floor .fr {
     float: right;
     width: 300px;
@@ -701,8 +701,57 @@
     background: url(../img/biao_bg.png) no-repeat 0 -52px;
 }
 /*==================floor楼层end===========================*/
-
-
+/*=================楼层vav========================*/
+#lou_nav {
+	width: 32px;
+	position: fixed;
+	top: 150px;
+	left: 30px;
+	border: 1px solid #ddd;
+	display: none;
+}
+#lou_nav ul li {
+	width: 32px;
+	height: 32px;
+	border-bottom: 1px dotted #DDDDDD;
+	list-style: none;
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	line-height: 32px;
+	position: relative;
+	cursor: pointer;
+}
+#lou_nav ul li span {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#lou_nav ul li span {
+	display: none;
+}
+#lou_nav ul li.last {
+	background: #dc0f50;
+	color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+#lou_nav ul li.hover span {
+	background: #dc0f50;
+	color: #fff;
+	display: block;
+}
+#lou_nav ul li.hover span.active {
+	background: #dc0f50;
+	color: #fff;
+	display: block;
+}
+#lou_nav ul li span.active {
+	background: #fff;
+	color: #dc0f50;
+	display: block;
+}
 
 
 
